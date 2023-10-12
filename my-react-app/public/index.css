@@ -1,3 +1,25 @@
 body {
     background-color: #1f1f1f;
-  }
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+    }
+  
+
+.container {
+    width: 100%; /* Set the container width to 1920 pixels */
+    height: 1080px; /* Set the container height to 1080 pixels */
+    position: relative; /* Position relative for absolute positioning of the image */
+    background: linear-gradient(275deg,rgba(10,10,10,0) 0,rgba(10,10,10,.8) 70%);
+
+}
+
+img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Make the image fill the container vertically */
+    object-fit: cover; /* Cover the entire container with the image */
+    position: absolute; /* Position the image absolutely within the container */
+}
+
+body {
+    overflow: hidden; /* Hide the scrollbar for the entire page */
+}

@@ -1,7 +1,11 @@
 import { Auth } from "./components/auth";
+import Navbar from './components/navbar';
+import PresentationPage from './components/presentationpage';
 
 function App() {
-return <div className="App"><Auth /></div>
+
+return <div> <PresentationPage /></div>
+
 }
 
 export default App;

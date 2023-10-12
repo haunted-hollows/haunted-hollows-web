@@ -1,22 +1,15 @@
 import { useState } from "react";
+import './auth.css';
 import {auth, GoogleProvider} from "../config/firebase";
 import {createUserWithEmailAndPassword, signInWithPopup, signOut} from 'firebase/auth';
 
 export const Auth = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
 
-    const signIn = async () => {
-        try{
-        await createUserWithEmailAndPassword(auth, email, password);
-        } catch (err) {
-            console.error(err);
-        }
-    };
 
-    const signInWithGoogle = async () => {
+     const signInWithGoogle = async () => {
         try {
             await signInWithPopup(auth, GoogleProvider)
+            console.log("Login realizado com " + auth.currentUser.email);
         } catch (err)
         {
             console.error(err)
@@ -26,27 +19,24 @@ export const Auth = () => {
     const logout = async () => {
         try {
             await signOut(auth)
+            console.log("logout realizado");
         } catch (err)
         {
             console.error(err)
         }
     };
 
+
+    if (auth.currentUser && auth.currentUser.email !== null) {
+
+        console.log(auth.currentUser.email)
+      } else {
+
+      }
+
     return (
-        <div>
-            <input placeholder="Email"
-             onChange={(e) => setEmail(e.target.value)}>
-             </input>
-
-            <input placeholder="Password"
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}>
-            </input>
-
-            <button onClick={signIn}>Sign In</button>
             <button onClick={signInWithGoogle}> Sign in With Google</button>
-            <button onClick={logout}> Logout </button>
-
-        </div>
     )
 }
+
+export default Auth ;

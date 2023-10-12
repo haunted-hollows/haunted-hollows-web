@@ -1,0 +1,66 @@
+/* styles.css */
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    padding: 10px;
+    color: #fff;
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Take up the full width of the viewport */
+    z-index: 1000; /* Adjust z-index as needed */
+    height: 6%;
+}
+
+.left-items {
+    display: flex;
+    align-items: center;
+}
+
+.imge {
+position: relative;
+width: 102px;
+height: 56px;
+}
+
+.left-items div {
+    width: 20%;
+    height: 100%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif; /* Apply 'Open Sans' font */
+    font-size: 14px; /* Set font size to 14px */
+}
+
+.right-item button {
+    text-decoration: none;
+    color: black;
+    border-radius: 13px;
+    background-color: #298466;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif; /* Apply 'Open Sans' font */
+    font-size: 14px; /* Set font size to 14px */
+    margin-right: 50px;
+}
+
+.container {
+    width: 100%; /* Set the container width to 1920 pixels */
+    height: 1080px; /* Set the container height to 1080 pixels */
+    position: relative; /* Position relative for absolute positioning of the image */
+    background: linear-gradient(275deg,rgba(10,10,10,0) 0,rgba(10,10,10,.8) 70%);
+
+}
+
+img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Make the image fill the container vertically */
+    object-fit: cover; /* Cover the entire container with the image */
+    position: absolute; /* Position the image absolutely within the container */
+}

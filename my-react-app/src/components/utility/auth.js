@@ -4,12 +4,12 @@ import {auth, GoogleProvider} from "../../config/firebase";
 import {createUserWithEmailAndPassword, signInWithPopup, signOut} from 'firebase/auth';
 
 export const Auth = () => {
-
+    
 
      const signInWithGoogle = async () => {
         try {
             await signInWithPopup(auth, GoogleProvider)
-            console.log("Login realizado com " + auth.currentUser.email);
+            console.log("Login realizado com " + auth.currentUser.email, auth.currentUser.displayName);
         } catch (err)
         {
             console.error(err)

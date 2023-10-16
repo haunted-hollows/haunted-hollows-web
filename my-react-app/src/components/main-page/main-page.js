@@ -28,7 +28,14 @@ function MainPage() {
     
     <div>
       <div className="mainpage-container">
-        {/* Content for mainpage-container */}
+        <div className="download">
+        <div className="picture">
+        <img src="./images/Screenshot_2-removebg-preview.png" alt="Image" />
+      </div>
+      <div className="button-play-now">
+      <p>PLAY NOW</p>
+  </div>
+        </div>
       </div>
       <Element name="gameplay">
       <div className="titulo-container">

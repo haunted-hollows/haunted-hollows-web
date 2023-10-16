@@ -50,7 +50,7 @@ height: 66px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 15px;   
+    margin-top: 25px;   
     font-family: 'Lato', sans-serif;
     margin-right: 50px;
     vertical-align: middle;
@@ -76,6 +76,7 @@ img {
 }
 
 .nav-link {
+    cursor: pointer;
     width: 20%;
     height: 100%;
     margin-right: 20px;
@@ -87,3 +88,80 @@ img {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
   }
+  .user-info {
+    position: relative;
+  }
+  
+  .display-name {
+    margin-top: 50px;
+    margin-right: 60px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hover-box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    top: 100%; /* Position below the ".display-name" paragraph */
+    right: 0px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    border-top: 2px solid #298466;
+  }
+  
+  .user-info:hover .hover-box {
+    display: block;
+  }
+  
+ .user-info {
+  position: relative;
+}
+
+.display-name {
+  margin-top: 50px;
+  margin-right: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  align-items: start;
+}
+
+.hover-box {
+  position: absolute;
+  height: auto;
+  width: 100px;
+  top: 100%; /* Position below the ".display-name" paragraph */
+  right: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  padding-left: 25px;
+  display: none;
+  text-align: start;
+  border-top: 2px solid #298466;
+}
+
+.right-item:hover .hover-box {
+  display: block;
+}
+
+.sign-out-box
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

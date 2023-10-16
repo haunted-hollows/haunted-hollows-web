@@ -4,6 +4,8 @@ import {  createBrowserRouter, RouterProvider } from "react-router-dom"
 import MainPage from './components/main-page/main-page';
 import App from './App';
 import Loading from './components/loading/loading';
+import PatchNotes from './components/patch-notes-page/patch-notes';
+import RoadMap from './components/roadmap-page/roadmap';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,15 @@ const router = createBrowserRouter([
       {
         path: "load",
         element: <Loading></Loading>
+      },
+      {
+        path: "patch-notes",
+        element: <PatchNotes></PatchNotes>
+      },
+
+      {
+        path: "roadmap",
+        element: <RoadMap></RoadMap>
       }
     ]
   }

@@ -35,9 +35,9 @@ function Footer () {
         </div>
         
         <div className="images">
-          <a href="https://github.com/haunted-hollows"><img className="social" href="https://github.com/haunted-hollows" src={imageSrcGitHub}/></a>
-          <a href="https://www.linkedin.com/in/martim-moreira-1401b3258/"><img className="social" href="https://www.linkedin.com/in/martim-moreira-1401b3258/" src={imageSrcLinkedin}/></a>
-          <a href="https://twitter.com/Velosogvf"><img className="social" src={imageSrcTwitter}/></a>
+          <a href="https://github.com/haunted-hollows" target="_blank"><img className="social" href="https://github.com/haunted-hollows" src={imageSrcGitHub}/></a>
+          <a href="https://www.linkedin.com/in/martim-moreira-1401b3258/" target="_blank"><img className="social" href="https://www.linkedin.com/in/martim-moreira-1401b3258/" src={imageSrcLinkedin}/></a>
+          <a href="https://twitter.com/Velosogvf" target="_blank"><img className="social" src={imageSrcTwitter}/></a>
         </div>  
         
         <div></div>

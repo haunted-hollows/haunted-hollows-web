@@ -11,16 +11,16 @@
 
 .box-top {
   width: 80%;
-  height: 40%;
+  height: 50%;
   display: flex;
 }
 
 .box-down {
   width: 80%;
-  height: 50%;
+  height: 30%;
   border-top: 1px solid #298466;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -80,4 +80,15 @@
     font-weight: 500;
     line-height: 130%;
     margin: 0px;
+  }
+
+  p3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px;
+    line-height: 200%;
   }

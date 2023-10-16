@@ -29,8 +29,12 @@ width: 120px;
 height: 66px;
 }
 
+
 .left-items div {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
     height: 100%;
     margin-right: 20px;
     text-decoration: none;
@@ -38,7 +42,8 @@ height: 66px;
     margin-left: 20px;
     font-weight: 400;
     padding-top: 15px;
-    font-family: 'Lato', sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
     font-size: 14px; /* Set font size to 14px */
 }
 
@@ -51,7 +56,8 @@ height: 66px;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 25px;   
-    font-family: 'Lato', sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
     margin-right: 50px;
     vertical-align: middle;
     font-size: 13px;
@@ -85,7 +91,8 @@ img {
     margin-left: 20px;
     font-weight: 400;
     padding-top: 15px;
-    font-family: 'Lato', sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
     font-size: 14px;
   }
   .user-info {
@@ -95,7 +102,8 @@ img {
   .display-name {
     margin-top: 50px;
     margin-right: 60px;
-    font-family: 'Lato', sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
     font-size: 14px;
     font-weight: 500px;
     text-transform: uppercase;
@@ -129,7 +137,8 @@ img {
 .display-name {
   margin-top: 50px;
   margin-right: 60px;
-  font-family: 'Lato', sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
   font-size: 14px;
   font-weight: 600px;
   text-transform: uppercase;
@@ -159,7 +168,8 @@ img {
 
 .sign-out-box
 {
-    font-family: 'Lato', sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
     font-size: 14px;
     font-weight: 600px;
     margin-bottom: 20px;

@@ -9,6 +9,7 @@
 
 
 .centered-image {
-  transform: scale(0.5);
+  width: 350px;
+  height: 200px;
 }
 

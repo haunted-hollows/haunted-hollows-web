@@ -34,19 +34,39 @@ function Navbar() {
     return unsubscribe;
   }, []);
 
+    //Download Game
+    const handleDownloadZip = () => {
+
+      const zipFileUrl = "/hauntedHollows.zip";
+      const link = document.createElement("a");
+  
+      link.href = zipFileUrl;
+      link.download = "HauntedHollow.zip";
+      link.click();
+    };
+
   return (
     <div className="navbar">
       <div className="left-items">
-        <Link to="/">
+        <Link to="/"  style={{ color: 'white', textDecoration: 'none' }}>
           <img className="imge" src={imageSrc} alt="Image Alt Text" />
         </Link>
-        <div className="nav-link">DOWNLOAD</div>
+        <div className="nav-link" onClick={handleDownloadZip}>DOWNLOAD</div>
         <div className="nav-link">
+  
+
           <ScrollLink to="gameplay" smooth={true} duration={500}>
+          <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
             GAMEPLAY
+            </Link>
           </ScrollLink>
         </div>
+        <Link to="/roadmap"  style={{ color: 'white', textDecoration: 'none' }}>
         <div className="nav-link">ROADMAP</div>
+        </Link>
+        <Link to="/patch-notes"  style={{ color: 'white', textDecoration: 'none' }}>
+        <div className="nav-link">PATCH NOTES</div>
+        </Link>
       </div>
       <div className="right-item">
         {loading ? (
@@ -56,9 +76,13 @@ function Navbar() {
         ) : (
           <div className="user-info">
             <p className="display-name">{user.displayName}</p>
-            <div className="hover-box"><p className="sign-out-box">Settings</p> <p className="sign-out-box" onClick={handleSignOut}>Log out</p></div>
+            <div className="hover-box">
+              <p className="sign-out-box">Settings</p>{" "}
+              <p className="sign-out-box" onClick={handleSignOut}>
+                Log out
+              </p>
+            </div>
           </div>
-
         )}
       </div>
     </div>

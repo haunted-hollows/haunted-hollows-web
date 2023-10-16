@@ -1,0 +1,33 @@
+.patch-notes
+{
+  margin-top: 8%;
+  margin-left: 4%;
+  height: 100vh;
+}
+
+.title
+{
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
+  font-weight: 500; /* Use 'Medium' font weight */
+  font-size: 50px; /* Set the font size to 14px */
+  color: white;
+}
+
+.sub-title{
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
+  font-weight: 400; /* Use 'Medium' font weight */
+  font-size: 30px; /* Set the font size to 14px */
+  color: white;
+}
+
+.text
+{
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
+  font-weight: 400; /* Use 'Medium' font weight */
+  font-size: 26px; /* Set the font size to 14px */
+  color: white;
+  line-height: 130%;
+}

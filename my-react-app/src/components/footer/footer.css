@@ -1,0 +1,83 @@
+/* footer.css */
+.box {
+  height: 295px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 25px;
+}
+
+.box-top {
+  width: 80%;
+  height: 40%;
+  display: flex;
+}
+
+.box-down {
+  width: 80%;
+  height: 50%;
+  border-top: 1px solid #298466;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box-top > div {
+  width: 33%;
+}
+
+.box-down > div {
+    width: 33%;
+  }
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+.pm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.pd {
+    width: 28% !important;
+}
+
+.spacing{
+    width: 5% !important;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+.social{
+    width: 44px;
+    height: 44px;
+    margin: 10px;
+}
+
+.p2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin: 0px;
+  }

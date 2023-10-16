@@ -1,11 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Import from 'react-dom' instead of 'react-dom/client'
+import {  createBrowserRouter, RouterProvider } from "react-router-dom"
+import MainPage from './components/main-page/main-page';
 import App from './App';
+import PresentationPage from './components/presentantion/presentationpage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App></App>,
+    children: [
+      {
+        path: "/",
+        element: <MainPage></MainPage>
+      },
+      {
+        path: "load",
+        element: <PresentationPage></PresentationPage>
+      }
+    ]
+  }
+])
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -22,6 +22,16 @@ function MainPage() {
     });
   }, []);
 
+  const handleDownloadZip = () => {
+    // Replace this URL with the actual URL of the zip file you want to download
+    const zipFileUrl = "/hauntedHollows.zip";
+
+    const link = document.createElement("a");
+    link.href = zipFileUrl;
+    link.download = "HauntedHollow.zip";
+    link.click();
+  };
+
 
   return (
 
@@ -32,7 +42,7 @@ function MainPage() {
         <div className="picture">
         <img src="./images/Screenshot_2-removebg-preview.png" alt="Image" />
       </div>
-      <div className="button-play-now">
+      <div className ="button-play-now" onClick={handleDownloadZip}>
       <p>PLAY NOW</p>
   </div>
         </div>

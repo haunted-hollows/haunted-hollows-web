@@ -165,3 +165,17 @@ img {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+    @media screen and (max-width: 760px) {
+        .left-items {
+          margin-left: 25px;
+        }
+        .nav-link {
+          display: none;
+        }
+      
+        .hover-box {
+          display: none;
+        }
+      }
+  

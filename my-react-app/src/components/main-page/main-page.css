@@ -63,16 +63,13 @@ img {
 
 .download
 {
-  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
-}
-
-.download {
-  width: 600px;
-  height: 440px;
+  width: 60vh;
+  height: 44vh;
   border-radius: 67px;
   border: 2px solid #107569; /* Green border */
   background-color: #1F1F1F; /* Black background */
@@ -80,6 +77,18 @@ img {
   flex-direction: column;
 }
 
+@media screen and (max-width: 760px)   {
+
+  .download {
+    margin: 20px;
+    height: 35vh;
+  }
+  .button-play-now
+  {
+    margin-top: 20px;
+  }
+}
+  
 .picture {
   margin-top: 65px;
   flex: 4; /* Takes 80% of the height */
@@ -90,8 +99,8 @@ img {
 }
 
 .picture img {
-  max-width: 330px;
-  max-height: 199px;
+  max-width: 33vh;
+  max-height: 19vh;
 }
 
 .button-container {
@@ -104,8 +113,8 @@ img {
 .button-play-now {
   background-color: #298466; /* Green background for the button */
   color: #1f1f1f; /* Black text color */
-  width: 220px;
-  height: 50px;
+  width: 22vh;
+  height: 5vh;
   border: none;
   border-radius: 5px;
   cursor: pointer;

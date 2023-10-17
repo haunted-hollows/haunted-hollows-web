@@ -11,7 +11,7 @@ function Footer () {
       <div className="box-top">
         
         <div>
-          <img className="logo" src={imageSrc}/>
+          <img className="logo"  src={imageSrc}/>
         </div>
 
         <div className="pm">
@@ -19,12 +19,13 @@ function Footer () {
           <p className="p1">Filipe Pereira, Gonçalo Veloso, Gonçalo Sousa, Martim Moreira</p>
         </div>
         
-        <div className="spacing">
-
-        </div>
+        <div className="spacing"></div>
+        <div className="spacing-mobile"></div>
+        
         <div className="pd">
           <p className="p1">Number: + 351 964 741 017</p>
-          <p className="p1">Email: AintNoWayGames@gmail.com  </p>
+          <p className="p1">Email: AintNoWayGames@gmail.com</p>
+          <p className="p1-mobile">AintNoWayGames@gmail.com</p>
           <p className="p1">Locate us: R. Fonte de Boucas 146, 4720-621 Rendufe</p>
         </div>
         
@@ -32,6 +33,7 @@ function Footer () {
       <div className="box-down">
         <div>
           <p className="p2">© 2023 ANW Games. Todos os direitos reservados.</p>
+          <p className="p2-mobile">© 2023 ANW Games. Todos os direitos reservados.</p>
         </div>
         
         <div className="images">

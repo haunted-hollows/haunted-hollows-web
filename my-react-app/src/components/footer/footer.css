@@ -29,18 +29,18 @@
 }
 
 .box-down > div {
-    width: 33%;
-  }
+  width: 33%;
+}
 
 .logo {
   width: 200px;
   height: 100px;
 }
 
-.pm{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.pm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .p1 {
@@ -53,63 +53,130 @@
   line-height: 130%;
 }
 
+.p1-mobile {
+  display: none;
+}
+
 .pd {
-    width: 28% !important;
+  width: 28% !important;
 }
 
-.spacing{
-    width: 5% !important;
+.spacing {
+  width: 5% !important;
 }
 
-.images{
-    display: flex;
-    justify-content: center;
+.spacing-mobile {
+  display: none;
 }
-.social{
-    width: 44px;
-    height: 44px;
-    margin: 10px;
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  margin: 10px;
 }
 
 .p2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Josefin Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 0px;
+}
+
+.p2-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .p1,
+  .p2 {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .spacing {
+    display: none;
+  }
+
+  .box {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 25px;
+  }
+
+  .box-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px !important;
+  }
+
+  .box-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .pd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1-mobile {
+    display: block;
     color: rgba(255, 255, 255, 0.5);
     font-feature-settings: "clig" off, "liga" off;
     font-family: Josefin Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 130%;
-    margin: 0px;
+    top: 10px;
+    margin-top: 10px;
+    z-index: 1;
   }
 
-  p3 {
+  .p2-mobile {
     color: rgba(255, 255, 255, 0.5);
     font-feature-settings: "clig" off, "liga" off;
     font-family: Josefin Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    margin: 0px;
-    line-height: 200%;
+    top: 10px;
+    margin-top: 10px;
+    z-index: 1;
   }
 
-  @media screen and (max-width: 760px)   {
- .p1 {
-  display: none;
- }
- .p3 {
-  display: none;
- }
- .p2 {
-  display: none;
- }
- 
- .box-top
- {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
- }
-
- 
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+}

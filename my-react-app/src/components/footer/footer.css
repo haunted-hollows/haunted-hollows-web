@@ -92,3 +92,24 @@
     margin: 0px;
     line-height: 200%;
   }
+
+  @media screen and (max-width: 760px)   {
+ .p1 {
+  display: none;
+ }
+ .p3 {
+  display: none;
+ }
+ .p2 {
+  display: none;
+ }
+ 
+ .box-top
+ {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+ }
+
+ 
+  }

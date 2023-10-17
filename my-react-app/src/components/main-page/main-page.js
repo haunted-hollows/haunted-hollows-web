@@ -26,7 +26,7 @@ function MainPage() {
   //Download Game
   const handleDownloadZip = () => {
 
-    const zipFileUrl = "/hauntedHollows.zip";
+    const zipFileUrl = "https://firebasestorage.googleapis.com/v0/b/anwesbite.appspot.com/o/hauntedHollows.zip?alt=media&token=b2c35a1f-cad6-4272-af43-285910b8c2c1&_gl=1*114c2kt*_ga*MTY3NDg0NzkzLjE2OTc0NzU3MDE.*_ga_CW55HF8NVT*MTY5NzU1ODIxOC41LjEuMTY5NzU1ODI2MC4xOC4wLjA.";
     const link = document.createElement("a");
 
     link.href = zipFileUrl;
@@ -51,9 +51,6 @@ function MainPage() {
           <p>PRE BETA FOOTAGE</p>
         </div>
         <div className="gameplay">
-          <div className="video-container">
-            <video src="/video.mp4" poster="Group 14.png"></video>
-          </div>
           <div className="video-container">
             <video src="/video.mp4" poster="Group 14.png"></video>
           </div>

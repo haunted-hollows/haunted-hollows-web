@@ -181,11 +181,11 @@ img {
           margin-left: 25px;
         }
         .nav-link {
-          display: none;
+          display: none !important;
         }
       
         .hover-box {
-          display: none;
+          display: none !important; 
         }
       }
   

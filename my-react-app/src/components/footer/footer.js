@@ -24,8 +24,12 @@ function Footer () {
         
         <div className="pd">
           <p className="p1">Number: + 351 964 741 017</p>
+<<<<<<< Updated upstream
           <p className="p1">Email: AintNoWayGames@gmail.com</p>
           <p className="p1-mobile">AintNoWayGames@gmail.com</p>
+=======
+          <p className="p1">Email: AintNoWayGames@gmail.com </p>
+>>>>>>> Stashed changes
           <p className="p1">Locate us: R. Fonte de Boucas 146, 4720-621 Rendufe</p>
         </div>
         
@@ -40,7 +44,7 @@ function Footer () {
           <a href="https://github.com/haunted-hollows" target="_blank"><img className="social" href="https://github.com/haunted-hollows" src={imageSrcGitHub}/></a>
           <a href="https://www.linkedin.com/in/martim-moreira-1401b3258/" target="_blank"><img className="social" href="https://www.linkedin.com/in/martim-moreira-1401b3258/" src={imageSrcLinkedin}/></a>
           <a href="https://twitter.com/Velosogvf" target="_blank"><img className="social" src={imageSrcTwitter}/></a>
-        </div>  
+        </div>
         
         <div></div>
       </div>

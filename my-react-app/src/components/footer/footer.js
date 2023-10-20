@@ -24,12 +24,8 @@ function Footer () {
         
         <div className="pd">
           <p className="p1">Number: + 351 964 741 017</p>
-<<<<<<< Updated upstream
           <p className="p1">Email: AintNoWayGames@gmail.com</p>
           <p className="p1-mobile">AintNoWayGames@gmail.com</p>
-=======
-          <p className="p1">Email: AintNoWayGames@gmail.com </p>
->>>>>>> Stashed changes
           <p className="p1">Locate us: R. Fonte de Boucas 146, 4720-621 Rendufe</p>
         </div>
         
